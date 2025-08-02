@@ -7,4 +7,4 @@ Future Scope:\
 . Connection with Database\
 . Addition of payment gateway\
 . Addition of user login system\
-. API integration\
+. API integration
