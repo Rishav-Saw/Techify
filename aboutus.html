@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        .menubar{
+            background-color: tomato;
+            
+        }
+        .menubar ul{
+           
+            list-style: none;
+            
+
+        }
+        .menubar ul li{
+            display: inline-flex;
+            margin: 10px 20px;
+            color: white;
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: x-large;
+            padding: 3px 10px;
+        }
+        .menubar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .menubar ul li:hover{
+            border: 1px solid white;
+        }
+
+        .submenu{
+            display: none;
+        }
+        .menubar ul li:hover .submenu{
+            display: block;
+            position: absolute;
+            background-color: tomato;
+            margin-top: 30px;
+            margin-left: -10px;
+        }
+        .menubar ul li:hover .submenu ul li{
+            display: block;
+            margin-left: -5px;
+        }
+        .submenu ul li{
+            border-bottom: 0.5px solid white;
+        }
+        .submenu ul :last-child{
+            border-bottom:none;
+        }
+        .innerdiv1 h1{
+            text-align: center;
+            font-family: cursive;
+            color: tomato;
+            font-weight:bolder ;
+        }
+        .innerdiv2 img{
+            display: block;
+            margin-left:auto;
+            margin-right: auto;
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+        }
+        .innerdiv2 h1{
+            text-align: center;
+            font-family: cursive;
+            font-weight: bolder;
+            color: tomato;
+        }
+        hr{
+            border: 1px solid tomato;
+        }
+        .innerdiv3{
+            margin-top: 80px;
+        }
+        .innerdiv3 p{
+            font-family: cursive;
+            font-size: larger;
+            margin: 35px 15px;
+            
+            font-weight:800;
+
+        }
+        #thirdp{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menubar">
+        <ul>
+            <li><a href="index.html">Techify</a></li>
+            <li><a href="aboutus.html" target="_self">About Us</a></li>
+            <li>Products
+                <div class="submenu">
+                    <ul>
+                        <li><a href="alexa.html" target="_self">Echo Dot Smart Assistant</a></li>
+                        <li><a href="smartbulb.html" target="_self">Wipro Smart Bulb</a></li>
+                        <li><a href="smartglasses.html" target="_self">Bose Smart Sunglasses</a></li>
+                        <li><a href="smarttv.html" target="_self">Samsung Smart TV</a></li>
+                        <li><a href="smartsecurity.html" target="_self">D3D Smart Security System</a></li>
+                        <li><a href="smartfan.html" target="_self">Atomberg Smart Fan</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="outerdiv">
+        <div class="innerdiv1">
+            <h1>About Us</h1>
+        </div>
+        <hr>
+        <div class="innerdiv2">
+            <img src="favicon.png" alt="Logo">
+            <h1>Techify</h1>
+        </div>
+        <div class="innerdiv3">
+            <p>
+                Techify is an e-commerce website where you can find all the products based on the new technologies which will make your life easier . Techify helps you by providing the genuine products and that too the earliest of all our competitors.
+            </p>
+            <p>
+                Techify was founded by Rishav Kumar Saw (1957) along with Atul Goyal (20BCS1810), Anubhav Chaturvedi (1924), Akash Kumar Maurya (20BCS1991) with the aim of delivering the newest technologies to each and every household in India and we are happy that we have taken the first step towards it.
+            </p>
+            <p id="thirdp">
+                So, shop on Techify and become a tech lover because we strongly believe that tech is the future.
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        .body{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 75px;
+            margin-bottom: 75px;
+            width: 50%;
+            background-color: lightgray;
+            border-radius: 7px;
+            
+        }
+        .heading{
+            font-family: cursive;
+            font-weight: bold;
+            color: orangered;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .form1{
+            text-align: center;
+        }
+        input[type="text"],input[type="password"]{
+            margin: 20px 40px;
+            padding: 6px 6px;
+            text-align: center;
+            width: 260px;
+            border-radius: 6px;
+            border: 1px solid black;
+        }
+        .form1 a{
+            margin: 20px 110px;
+            text-decoration: none;
+            font-family: 'Lucida Sans';
+            color:purple;
+        }
+        input[type="submit"]{
+            margin: 30px 120px;
+            width: 120px;
+            padding: 6px 6px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+    border:2px solid green;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="heading">
+            <h2>Login</h2>
+        </div>
+        <form action="conn1.php" method="POST" class="form1">
+            <input type="text" name="User_Name" id="User_Name" required placeholder="Enter your User Name">
+            <br>
+            <input type="password" name="Password" id="Password"required placeholder="Enter your password">
+            <br/>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

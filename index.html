@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHIFY</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+       /* nav{
+            border: 1px solid tomato;
+            background-color: tomato;
+           display: flex;
+           flex-wrap: wrap;
+           padding: 10px 5px;
+           
+            
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: larger;
+            text-align: center;
+            width: 30%;
+            margin: 3px 3px;
+            
+        }
+        nav span{
+            color: white;
+            font-family: cursive;
+            font-size: xx-large;
+            font-weight: bolder;
+            margin: auto;
+        }
+        
+        nav select{
+            width: 30%;
+            text-align: center;
+            font-weight: bolder;
+            font-size:larger;
+            background-color: tomato;
+            color: white;
+            border: none;
+            font-family: cursive;
+            margin: 3px 3px;
+        }
+        nav a:hover , nav select:hover {
+            border: 0.5px solid white;
+        }*/
+        .menubar{
+            background-color: tomato;
+            
+        }
+        .menubar ul{
+           
+            list-style: none;
+            
+
+        }
+        .menubar ul li{
+            display: inline-flex;
+            margin: 10px 20px;
+            color: white;
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: x-large;
+            padding: 3px 10px;
+        }
+        .menubar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .menubar ul li:hover{
+            border: 1px solid white;
+        }
+
+        .submenu{
+            display: none;
+        }
+        .menubar ul li:hover .submenu{
+            display: block;
+            position: absolute;
+            background-color: tomato;
+            margin-top: 30px;
+            margin-left: -10px;
+        }
+        .menubar ul li:hover .submenu ul li{
+            display: block;
+            margin-left: -5px;
+        }
+        .submenu ul li{
+            border-bottom: 0.5px solid white;
+        }
+        .submenu ul :last-child{
+            border-bottom:none;
+        }
+        .signupandlogin{
+            float: right;
+        }
+        .outerdiv1{
+            background-color: white;
+        }
+        .innerdiv1 marquee{
+            color: tomato;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: large;
+            padding: 8px 8px;
+        }
+        .inin1 img{
+            width:33% ;
+            border: 1px solid tomato;
+            margin: 1.8px;
+        }
+        .inin2{
+            overflow: hidden;
+        }
+
+
+        .inin2 h3{
+            
+            color: black;
+            font-family: cursive;
+            font-weight: bolder;
+            width: 33%;
+            text-align: center;
+            float:left;
+            margin: 1.8px;
+            
+            
+        }
+        .inin2 a{
+            text-decoration: none;
+            
+            
+        }
+        .inin2 h3:hover{
+            color: tomato;
+        }
+        .inin3{
+            overflow: hidden;
+        }
+        .inin3 h4 {
+            width: 33%;
+            float: left;
+            font-family: cursive;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+            margin: 1.8px;
+            padding: 6px 6px;
+
+        }
+        /*@media only screen and (max-width:1887px){
+            .menubar{
+                width: 100%;
+            }
+            .menubar ul li{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+            .signupandlogin{
+                float: none;
+            }
+            .outerdiv1{
+                width: 100%;
+            }
+            .inin1,.inin2,.inin3{
+                display: flex;
+                flex-direction: row;
+            }
+            .inin2 a,.inin3 a{
+                width: 33.33%; 
+            }
+            .inin2 a h3{
+                
+                margin-left: 33.33%;
+                margin-right: 33.33%;
+            }
+            
+            
+            
+        }
+        */
+
+    </style>
+    
+</head>
+<body>
+    <div class="menubar">
+        <ul>
+            <li><a href="index.html">Techify</a></li>
+            <li><a href="aboutus.html" target="_self">About Us</a></li>
+            <li>Products
+                <div class="submenu">
+                    <ul>
+                        <li><a href="alexa.html" target="_self">Echo Dot Smart Assistant</a></li>
+                        <li><a href="smartbulb.html" target="_self">Wipro Smart Bulb</a></li>
+                        <li><a href="smartglasses.html" target="_self">Bose Smart Sunglasses</a></li>
+                        <li><a href="smarttv.html" target="_self">Samsung Smart TV</a></li>
+                        <li><a href="smartsecurity.html" target="_self">D3D Smart Security System</a></li>
+                        <li><a href="smartfan.html" target="_self">Atomberg Smart Fan</a></li>
+                    </ul>
+                </div>
+            </li>
+            <div class="signupandlogin">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </div>
+        </ul>
+    </div>
+    <!--<nav>
+        <span>TECHIFY</span>
+        <a href="ecommerce.html">Home</a>
+        <a href="####">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products</button>
+                <i class="fa-fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="alexa.html">Alexa Assistant</a>
+                    <a href="#">Smart Bulb</a>
+                    <a href="#">Smart Sunglasses</a>
+                    <a href="#">Smart TV</a>
+                    <a href="#">Smart Security System</a>
+                    <a href="#">Smart Fan</a>
+                  </div>
+            </div>
+              <select name="Select" id="Select">
+                <option value="Products">Products</option>
+                <option value="Alexa Assistant">Alexa Assistant</option>
+                <option value="Smart Bulb">Smart Bulb</option>
+                <option value="Smart Sunglasses">Smart Sunglasses</option>
+                <option value="Smart TV">Smart TV</option>
+                <option value="Smart Security System">Smart Security System</option>
+                <option value="Smart Fan">Smart Fan</option>
+            </select>
+        
+    </nav>-->
+    <div class="outerdiv1">
+        <div class="innerdiv1">
+            <marquee behavior="alternate" direction="right">Welcome to Techify , the home of new technologies</marquee>
+        </div>
+        <div class="innerdiv2">
+            <div class="inin1">
+                <img src="./assets/alexa.jpg" alt="Alexa">
+                <img src="./assets/smart bulb.jpg" alt="Smart Bulb">
+                <img src="./assets/bluetooth audio bose.jpg" alt="Bluetooth Audio Sunglasses">
+            </div>
+            
+            <div class="inin2">
+                <a href="alexa.html" target="_self"><h3>Echo Dot (3rd Gen) - #1 smart speaker brand in India with Alexa (Black)</h3></a>
+                <a href="smartbulb.html" target="_self"><h3>Wipro WiFi Enabled Smart LED Bulb E27 9-Watt (16 Million Colors + Shades of White) (Compatible with Amazon Alexa and Google Assistant) (Screw-Type Bulb)</h3></a>
+                <a href="smartglasses.html" target="_self"><h3>Bose Frames Soprano - Cat Eye Polarized, Bluetooth Sunglasses (Black, Medium)</h3></a>
+            </div>
+            <div class="inin3">
+                <h4>&#x20B9;2,999</h4>
+                <h4>&#x20B9;799</h4>
+                <h4>&#x20B9;21,900</h4>
+            </div>
+            
+        </div>
+        <div class="innerdiv2">
+            <div class="inin1">
+                <img src="./assets/smart tv.jpg" alt="Smart TV">
+                <img src="./assets/smart locks.jpg" alt="Smart Security System">
+                <img src="./assets/smart fan.jpg" alt="Smart Fan">
+            </div>
+            
+            <div class="inin2">
+                <a href="smarttv.html" target="_self"><h3>Samsung 138 cm (55 inches) Crystal 4K Series Ultra HD Smart LED TV UA55AUE60AKLXL (Black) (2021 Model)</h3></a>
+                <a href="smartsecurity.html" target="_self"><h3>D3D Smart Life WiFi GSM Security Alarm System for Home Shop Office with Motion Sensor | Door Window Sensor | Remote & Mobile Controlled Security System (Black) Model: ZX-G12</h3></a>
+                <a href="smartfan.html" target="_self"><h3>Atomberg Renesa Smart + 1200 mm BLDC Motor with Remote 3 Blade Ceiling Fan (Earth Brown, Pack of 1)</h3></a>
+            </div>
+            <div class="inin3">
+                <h4>&#x20B9;50,999</h4>
+                <h4>&#x20B9;7,850</h4>
+                <h4>&#x20B9;6,026</h4>
+            </div>
+            
+        </div>
+
+        
+    </div>  
+</body>
+</html>

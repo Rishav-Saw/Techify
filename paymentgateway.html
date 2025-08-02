@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .outerdiv{
+            box-shadow: 2px 2px 10px 5px lightgray;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 80px;
+            
+            
+        }
+        .innerdiv1{
+            text-align: center;
+            padding: 10px 10px;
+            color: tomato;
+            font-family: fantasy;
+            font-size: xx-large;
+            
+           
+        }
+        hr{
+            border: 1px solid tomato;
+            width: 100%;
+        }
+        input[type="text"],input[type="password"],input[type="month"]{
+            text-align: center;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: x-large;
+            margin-left: 20px;
+        }
+        input[type="submit"]{
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+            font-family: cursive;
+            padding: 17px 17px;
+            border-radius: 7px;
+            background-color:tomato;
+            color: white;
+            letter-spacing: 2px;
+        }
+        input[type="text"]:hover,input[type="password"]:hover,input[type="month"]:hover{
+            box-shadow: 2px 2px 11px 3px tomato;
+        }
+        input[type="submit"]:hover{
+            box-shadow: 2px 2px 11px 4px lightcoral;
+            background-color:tomato;
+            cursor: grabbing;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outerdiv">
+        <div class="innerdiv1">
+            <h1>Payment Details</h1>
+            <hr>
+            <form action="payment.php" method="POST">
+                <p>Your Name<input type="text" name="Name" id="Name" placeholder="Enter Your Name" required></p>
+
+                <p>Address<input type="text" name="Address" id="Address" placeholder="Enter Your Address" required></p>
+
+                <p>Phone Number <input type="text" name="Phone_No" id="Phone_No" placeholder="Enter Your Phone Number" required></p>
+                
+                <p>Card Number<input type="text" name="Card_Number" id="Card_Number" placeholder="Enter Valid Card Number" required></p>
+                
+                <p>Expiration Date<input type="month" name="Exp_Date" id="Exp_Date"placeholder="MM/YY" required></p>
+                
+                <p>CVV<input type="password" name="CVV" id="CVV" placeholder="Enter Your CVV" required maxlength="4"></p>
+                <input type="submit" value="Pay" name="submit">
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
