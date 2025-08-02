@@ -1,7 +1,7 @@
 A very basic E-commerce shopping website
 
 Future Scope:
-. Responsiveness
+. Responsiveness/br
 . Use of JavaScript for Cient Side Rendering
 . Better UI/UX
 . Connection with Database
